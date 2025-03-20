@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景圖重疊 (background-repeat)</title>
+    <style>
+
+        .container {
+            display: flex;
+        }
+
+        .image-container {
+            width: 300px;
+            height: 300px;
+            background-image: url('https://pbs.twimg.com/profile_images/1158297791791112194/MTWy8D2n_400x400.jpg');
+            background-size: cover;
+            border: 20px dashed #00f5;
+            padding: 10px;
+        }
+
+        .background-repeat-container {
+            width: 300px;
+            height: 300px;
+            background-image: url('https://cdna.artstation.com/p/assets/images/images/028/485/672/large/lin-hy-bj.jpg?1594634311');
+            background-repeat: repeat;
+            background-size: 100px 100px;
+            border: 20px double #00f5;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>背景圖重疊 (background-repeat)</h1>
+    
+    <div class="container">
+        <div class="image-container"></div>
+        <div class="background-repeat-container"></div>
+    </div>
+</body>
+</html>
